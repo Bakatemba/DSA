@@ -3,72 +3,129 @@
 
 //Physics//
 void Physics(){
-     int ass;
-     printf("Enter the results for your assignment:");
-     scanf("%d",&ass);
 
-     int cw;
-     printf("Enter the results for your course work:");
-     scanf("%d",&cw);
+    int ass, cw, mt, et;
 
-     int mt;
-     printf("Enter the results for your midterms:");
-     scanf("%d",&mt);
+    printf("Enter the results for your assignment: ");
+    scanf("%d", &ass);
+    while (ass > 100 || ass < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your assignment: ");
+        scanf("%d", &ass);
+    }
 
-     int et;
-     printf("Enter the results for your end of term:");
-     scanf("%d",&et);
+    printf("Enter the results for your course work: ");
+    scanf("%d", &cw);
+    while (cw > 100 || cw < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your course work: ");
+        scanf("%d", &cw);
+    }
 
-     int sum = et+mt+cw+ass;
-     float avg= sum/4;
+    printf("Enter the results for your midterms: ");
+    scanf("%d", &mt);
+    while (mt > 100 || mt < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your midterms: ");
+        scanf("%d", &mt);
+    }
 
-     printf("Total marks:%d\nAverage marks:%f",sum,avg);
+    printf("Enter the results for your end of term: ");
+    scanf("%d", &et);
+    while (et > 100 || et < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your end of term: ");
+        scanf("%d", &et);
+    }
+
+    int sum = et + mt + cw + ass;
+    float avg = sum / 4.0;
+
+    printf("Total marks: %d\nAverage marks: %.2f\n", sum, avg);
 }
 //CHEMISTRY//
 void Chemistry(){
-     int ass;
-     printf("Enter the results for your assignment:");
-     scanf("%d",&ass);
+     int ass, cw, mt, et;
 
-     int cw;
-     printf("Enter the results for your course work:");
-     scanf("%d",&cw);
+    printf("Enter the results for your assignment: ");
+    scanf("%d", &ass);
+    while (ass > 100 || ass < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your assignment: ");
+        scanf("%d", &ass);
+    }
 
-     int mt;
-     printf("Enter the results for your midterms:");
-     scanf("%d",&mt);
+    printf("Enter the results for your course work: ");
+    scanf("%d", &cw);
+    while (cw > 100 || cw < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your course work: ");
+        scanf("%d", &cw);
+    }
 
-     int et;
-     printf("Enter the results for your end of term:");
-     scanf("%d",&et);
+    printf("Enter the results for your midterms: ");
+    scanf("%d", &mt);
+    while (mt > 100 || mt < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your midterms: ");
+        scanf("%d", &mt);
+    }
 
-     int sum = et+mt+cw+ass;
-     float avg= sum/4;
+    printf("Enter the results for your end of term: ");
+    scanf("%d", &et);
+    while (et > 100 || et < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your end of term: ");
+        scanf("%d", &et);
+    }
 
-     printf("Total marks:%d\nAverage marks:%f",sum,avg);
+    int sum = et + mt + cw + ass;
+    float avg = sum / 4.0;
+
+    printf("Total marks: %d\nAverage marks: %.2f\n", sum, avg);
 }
+
 //MATH//
 void math(){
-     int ass;
-     printf("Enter the results for your assignment:");
-     scanf("%d",&ass);
 
-     int cw;
-     printf("Enter the results for your course work:");
-     scanf("%d",&cw);
+      int ass, cw, mt, et;
 
-     int mt;
-     printf("Enter the results for your midterms:");
-     scanf("%d",&mt);
+    printf("Enter the results for your assignment: ");
+    scanf("%d", &ass);
+    while (ass > 100 || ass < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your assignment: ");
+        scanf("%d", &ass);
+    }
 
-     int et;
-     printf("Enter the results for your end of term:");
-     scanf("%d",&et);
+    printf("Enter the results for your course work: ");
+    scanf("%d", &cw);
+    while (cw > 100 || cw < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your course work: ");
+        scanf("%d", &cw);
+    }
 
-     int sum = et+mt+cw+ass;
-     float avg= sum/4;
+    printf("Enter the results for your midterms: ");
+    scanf("%d", &mt);
+    while (mt > 100 || mt < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your midterms: ");
+        scanf("%d", &mt);
+    }
 
-     printf("Total marks:%d\nAverage marks:%f",sum,avg);
+    printf("Enter the results for your end of term: ");
+    scanf("%d", &et);
+    while (et > 100 || et < 0) {
+        printf("Marks should be between 0 and 100!\n");
+        printf("Enter the results for your end of term: ");
+        scanf("%d", &et);
+    }
+
+    int sum = et + mt + cw + ass;
+    float avg = sum / 4.0;
+
+    printf("Total marks: %d\nAverage marks: %.2f\n", sum, avg);
 }
 
 int main()
