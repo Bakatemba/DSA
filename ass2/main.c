@@ -1,44 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    int dom,wild,i;
-   printf("Enter the number of domestic animals:");
-   scanf("%d",&dom);
-   getchar();
+int main(){
 
-   char domesticanimals[dom][50];
-   printf("Enter the names of %d domestic animals;\n",dom);
-   for (i=0;i<dom;i++){
-    printf("Domestic animal %d:",i+1);
-    fgets(domesticanimals[i],50,stdin);
-   }
-   printf("\nDomestic Animals:\n");
-   for(i=0;i<dom;i++){
-    printf("%s",domesticanimals[i]);
-   }
-
-   printf("Enter the number of wild animals:");
-   scanf("%d",&wild);
-   getchar();
-
-   char wildanimals[wild][50];
-   printf("Enter the names of %d wild animals:\n",wild);
-   for (i=0;i<wild;i++){
-    printf("Wild animal%d:",i+1);
-    fgets(wildanimals[i],50,stdin);
-   }
-   printf("\nWild Animals:\n");
-   for(i=0;i<wild;i++){
-    printf("%s", wildanimals[i]);
-   }
-   printf("\nAll Animals:\n");
-   for(i=0;i<dom;i++){
-    printf("%s",domesticanimals[i]);
-   }
-   for (i=0;i<wild;i++){
-    printf("%s",wildanimals[i]);
-   }
-   return 0;
+    int n,x;
+printf("Enter the number of domestic animals ");
+scanf("%d",&n);
+printf("Enter the number of wild animals ");
+scanf("%d",&x);
+  char Domestic[n][6];
+char Wild[x][6];
+char Merged[n+x][13];
+    int i,j;
+// Prompting the user to enter the Domestic animals.
+printf("Please Enter the Domestic animals");
+printf("\n");
+for(int i =0;i<n;i++){
+    scanf("%s",&Domestic[i]);
+}
+// Prompting the user to enter the Wild animals.
+printf("\n\n");
+printf("Please enter the Wild animals");
+printf("\n");
+for( j =0;j<x;j++){
+    scanf("%s",&Wild[j]);
+}
+//printf("\n\n");
+// Copying Domestic animals into merged array.
+for (int i =0;i<n+x;i++){
+    strcpy(Merged[i],Domestic[i]);
+}
+// Copying wild animals into merged array.
+     printf("\n");
+for (int j=0;j<n+x;j++){
+    strcpy(Merged[n+j],Wild[j]);
+}
+// Printing Merged array
+     printf("\n");
+for (int i = 0;i<n+x;i++){
+printf("%s\n",Merged[i]);}
+return 0;
 }
