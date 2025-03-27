@@ -18,7 +18,7 @@ void Compilationof_Results() {
     printf("Enter names of  subjects:\n");
     for (int i = 0; i < n; i++) {
         printf("Subject %d: ", i + 1);
-        scanf(" %s", subjects_names[i]);
+        scanf(" %[^\n]", subjects_names[i]);
     }
 
     // Enter marks for each subject
