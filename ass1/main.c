@@ -5,16 +5,20 @@ void Compilationof_Results() {
     int n;
     printf("Please enter the number of subjects you would wish to enter marks for:");
     printf("\n");
-    scanf("%d",&n);
+   while( scanf("%d",&n) != 1){
+    printf("Invalid Input ,The number is supposed to be an integer\n Please re-enter the number\n");
+    while(getchar()!='\n');
+   }
     int Marks [n][4]; // 3 subjects, 4 marks per subject
     double sum, average;
+
     char subjects_names[n][20]; // Array to store subject names
 
     // Input subject names
     printf("Enter names of  subjects:\n");
     for (int i = 0; i < n; i++) {
         printf("Subject %d: ", i + 1);
-        scanf("%s", subjects_names[i]);
+        scanf(" %s", subjects_names[i]);
     }
 
     // Enter marks for each subject
@@ -24,7 +28,10 @@ void Compilationof_Results() {
         printf("\nEnter marks for %s (Asg, CW, MID, EOT):\n", subjects_names[k]);
         for (int j = 0; j < 4; j++) {
                 while(1){
-            scanf("%d", &Marks[k][j]);
+           while( scanf("%d", &Marks[k][j]) !=1){
+            printf("Invalid input The mark is supposed to be an integer\n Please re-enter the mark\n");
+            while(getchar()!='\n');
+           }
             if(Marks[k][j]>=0&&Marks[k][j]<=100){
                 break;
             }else{
