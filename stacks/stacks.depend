@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1744199424 source:c:\users\care it\onedrive\desktop\school\sem2\dsa\stacks\main.cpp
+	<iostream>
+	<string>
+	<cctype>
+	<limits>
+
